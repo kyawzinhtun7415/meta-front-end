@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Production Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Production Form</h1>
+    <form>
+        <label for="machine">Choose a machine:</label>
+        <select id="machine" name="machine">
+            <option value="machine1">Machine 1</option>
+            <option value="machine2">Machine 2</option>
+            <option value="machine3">Machine 3</option>
+        </select>
+
+        <label for="order-number">Order Number:</label>
+        <input type="text" id="order-number" name="order-number" required>
+
+        <label for="employee-number">Employee Number:</label>
+        <input type="text" id="employee-number" name="employee-number" required>
+
+        <label for="todays-output">Today's Output:</label>
+        <input type="number" id="todays-output" name="todays-output" required>
+
+        <label for="bad-products">Bad Products:</label>
+        <input type="number" id="bad-products" name="bad-products" required>
+
+        <label for="total">Total:</label>
+        <input type="number" id="total" name="total" readonly>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
+
+
+<button type="button" onclick="alert('You just clicked!')">Click Me! 
+</button> 
+
+<textarea name="response" rows="10" cols="30" maxlength=”200”> 
+
+</textarea> 
+
+<fieldset> 
+    <legend>Personal Info</legend> 
+    <label for="fname">First name:</label><br> 
+    <input type="text" id="fname" name="fname" value="John"><br> 
+    <label for="lname">Last name:</label><br> 
+    <input type="text" id="lname" name="lname" value="Doe"><br> 
+  </fieldset> 
+  
+  <fieldset> 
+    <legend>Qualificaiton</legend> 
+    <label for="pdegree">Primary degree:</label><br> 
+    <input type="text" id="pdegree" name="degree" value="Masters"><br> 
+    <label for="fos">Last name:</label><br> 
+    <input type="text" id="fos" name="field" value="Psychology"><br> 
+  </fieldset> 
+
+
+  <label for="course">Choose a course:</label><br> 
+<select id="course" name="courselist"> 
+  <option value="html">HTML Introduction</option> 
+  <option value="css">Styling with CSS</option> 
+  <option value="js">JavaScript</option> 
+  <option value="react">React Basics</option> 
+</select> 
+
+
+<form action="/my_action_page"> 
+    <label for="flowers">Favourite flower:</label><br> 
+    <input list="flowers" name="flowers"> 
+    <datalist id="flowers"> 
+      <option value="Rose"> 
+      <option value="Lily"> 
+      <option value="Tulip"> 
+      <option value="Daffodil"> 
+      <option value="Orchid"> 
+    </datalist> 
+    ... 
+  </form>
