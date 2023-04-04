@@ -65,11 +65,19 @@ input:invalid {
     padding: 10px;
 }
 
-.flex-container{
+.parent {
     display: flex;
-    justify-content: center;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    align-items:flex-end;
-    border: solid ;
-}
+    border: solid;
+  }
+
+  .child {
+    flex: 0 1 auto; /* Default flex value */
+  }
+
+  .parent {
+    display: flex;
+  }
+
+  .child-three {
+    flex: 0 1 1000px;
+  }
